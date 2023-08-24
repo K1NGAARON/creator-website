@@ -1,0 +1,7 @@
+.banner.section {
+    background-image: none;
+}
+
+.banner h1 {
+    color: var(--black);
+}

@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
+
+* {
+  font-family: 'Nunito', sans-serif;
+}
+
+:root {
+  --primary: #fe492c;
+}
+
+.banner.section {
+  background-image: none;
+}
+
+.banner.section .video-wrapper {
+  width: 100%;
+}
+
+.banner.section h1,
+.banner.section p {
+  color: var(--black);
+  max-width: 100%;
+}
+
+.section .btn.white {
+  color: var(--white);
+  background-color: var(--primary);
+}
+
+.header .container .nav {
+  color: var(--black);
+}
+
+.section .row.center p {
+  text-align: center;
+  width: 60%;
+}
+
+.section.primary {
+  color: var(--white);
+  background-color: var(--primary);
+}
+
+
+.accordion-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+}
+
+.accordion-list .accordion-item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 30px 20px;
+  border-radius: 12px;
+}
+
+.accordion-list .accordion-item:hover {
+  cursor: pointer;
+}
+
+.accordion-list .accordion-item .accordion-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--black);
+  padding-bottom: 15px;
+}
+
+.accordion-list .accordion-item .accordion-head.active {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.accordion-list .accordion-item .accordion-head h5 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--black);
+  opacity: 1;
+  transition: var(--transition);
+}
+
+.accordion-list .accordion-item .accordion-head.active h5 {
+  color: var(--primary);
+  transition: var(--transition);
+}
+
+.accordion-list .accordion-item .accordion-head .icon {
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+  display: flex;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.accordion-list .accordion-item .accordion-head .icon:hover {
+  cursor: pointer;
+}
+
+.accordion-list .accordion-item .accordion-head .icon.active {
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(90deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+}
+
+.accordion-list .accordion-item .accordion-head .icon .fa-minus {
+  transform: rotate(90deg);
+}
+
+.accordion-list .accordion-item .accordion-body {
+  display: none;
+}
+
+.accordion-list .accordion-item .accordion-body.active {
+  display: block;
+}
+
+.accordion-list .accordion-item .accordion-body p {
+  font-size: 16px;
+  margin-top: 20px;
+  color: var(--black);
+  text-align: left;
+  opacity: 0.5;
+}
+
+.header .topnav-content-sm svg {
+  fill: var(--black);
+}
