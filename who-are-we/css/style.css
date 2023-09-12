@@ -1,0 +1,13 @@
+.banner .row {
+    height: 100vh;
+    margin-top: 0;
+    justify-content: center;
+}
+
+@media (max-width: 560px) {
+    .banner .row {
+        height: fit-content;
+        margin-top: 100px;
+        justify-content: flex-start;
+    }
+}
