@@ -4,6 +4,10 @@
     justify-content: center;
 }
 
+.banner .row .video-wrapper {
+    width: 60%;
+}
+
 @media (max-width: 560px) {
     .banner .row {
         height: fit-content;
